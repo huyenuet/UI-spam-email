@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Filter spam email</title>
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body class = "container-fluid">
+    <form runat="server"></form>
+    <h1>Tool for detecting spam email</h1>
+    <div class="container">
+
+        <!--input email content-->
+        <div class="form-group col-md-6">
+            <textarea class="form-control" rows = "10" id="input-email"></textarea>
+            <br>
+            <button type="button" class="btn btn-success" id="submit">Submit</button>
+        </div>
+
+        <!--result spam or not-->
+        <div class="alert alert-warning col-md-6">
+            <p id="result"></p>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
